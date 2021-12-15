@@ -9,6 +9,11 @@ import Headercomp from './Headercomp';
 import Container from './Container';
 import reportWebVitals from './reportWebVitals';
 
+import CarFun from './CarFun'
+import ContainerFun from './ContainerFun'
+import GundamFunc from './GundamFun'
+import HeadercompFunc from './HeadercompFun'
+
 // class Gundam extends React.Component {
 //   constructor(props) {
 //       super(props);
@@ -17,7 +22,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Container />
+    <ContainerFun />
   </React.StrictMode>,
   document.getElementById('header')
 
