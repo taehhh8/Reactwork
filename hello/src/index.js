@@ -8,25 +8,64 @@ import Archangel from './Archangel';
 import Headercomp from './Headercomp';
 import Container from './Container';
 import reportWebVitals from './reportWebVitals';
+import Football from './Football';
+import Goal from './Goal';
+import Fate from './Fate';
 
-import CarFun from './CarFun'
-import ContainerFun from './ContainerFun'
-import GundamFunc from './GundamFun'
-import HeadercompFunc from './HeadercompFun'
+const characters = ['Siro', 'Saber', 'Archer', 'Tosaka Lyn', 'Verserker'];
+
+// import CarFun from './CarFun'
+// import ContainerFun from './ContainerFun'
+// import GundamFunc from './GundamFun'
+// import HeadercompFunc from './HeadercompFun'
 
 // class Gundam extends React.Component {
 //   constructor(props) {
 //       super(props);
 //   }
 
-
 ReactDOM.render(
   <React.StrictMode>
-    <ContainerFun />
+    <Archangel />
   </React.StrictMode>,
-  document.getElementById('header')
+  document.getElementById('root')
 
 )
+
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <Goal isGoal={false} />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+
+// )
+//사막연산자 사용가능
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <Fate characters={characters} />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+
+// )
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <Goal isGoal={true} />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+
+// )
+
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <Gundam model="ZGMF-X10A" />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+
+// )
 
 
 // ReactDOM.render(

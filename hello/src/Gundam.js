@@ -1,62 +1,7 @@
-// import React, { useState } from "react";
-
-// function tlqkf(props) {
-//     const[camp, setCamp] = useState("Earth")
-//     const[model, setModel] = useState("X109")
-//     const[engine, setEngine] = useState("Atomic")
-//     const[pilot, setPilot] = useState("Yamato")
-//     const[year, setYear] = useState("Cosmic 70")
-
-// }
+function Gundam(props) {
+    return <h1>This is {props.model} Gundam</h1>
+}
 
 
-// function Gundam(props) {
-    
-//     return (
-//     <div>
-//         <h1>{setModel} </h1>
-//         <h2>The camp is {setCamp}</h2>
-//         <h2>The engine is {setEngine}}</h2>
-//         <h2>The pilot Name is {setPilot}</h2>
-//         <h2>{setYear} Space Centry</h2>
-//         {/* <h2>The Cargo is {this.props.cargo} </h2> */}
-//         {/* <button type="button" onClick={this.changeModel}>Change model</button> */}
-//     </div> 
-//     )
-    
-// }
+export default Gundam;
 
-
-// class Gundam extends React.Component {
-//     constructor(props) {
-//         super(props);
-//         this.state = {
-//             camp: "Earth",
-//             model: "X109",
-//             engine: "Atomic",
-//             pilot: "Yamato",
-//             year: "Cosmic 70"
-            
-//         };
-//     }
-//     getDerivedStateFromprops() {} //이러 상속ㅇ인데 뭔지 모르겠음
-//     changeModel = () => {
-//         this.setState({model: "X109 Justice"});
-//     }
-
-//     render() {
-//         return (
-//         <div>
-//             <h1>{this.state.model} </h1>
-//             <h2>The camp is {this.state.camp}</h2>
-//             <h2>The engine is {this.state.engine}</h2>
-//             <h2>The pilot Name is {this.state.pilot}</h2>
-//             <h2>{this.state.year} Space Centry</h2>
-//             <h2>The Cargo is {this.props.cargo} </h2>
-//             <button type="button" onClick={this.changeModel}>Change model</button>
-//         </div> 
-//         )       
-//     }
-// }
-
-// export default Gundam;

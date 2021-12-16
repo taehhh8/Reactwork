@@ -1,36 +1,44 @@
-import React from 'react';
-
-
-function Gundam() {
-    return <h2>This is Freedom gundam</h2>
-
+function Gundam(props) {
+    return <li>This is {props.id + " " + props.model}</li>;
 }
 
-function Archangel() {
-    return (
-        <div>
-            <h1>Who lives in Archangel???</h1>
-            <Gundam />
-        </div>
-    )
-}
+    // function Archangel() {
+    //     const gundamList = [
+    //         "ZMGF-X10A Freedom Gundam",  
+    //         "ZMGF-X10A Justice Gundam",  
+    //         "Strike Gundam"  
+    //     ];
+    //     return (
+    //         <>
+    //             <h1>Which Gundam lives in Archangel???</h1>
+    //             <ul>
+    //                 {gundamList.map((robot) => <Gundam model={robot} />)}
+    //             </ul>
+    //         </>
+    //     );
+        
+    // }
 
-// class Gundam extends React.Component {
-//     render() {
-//         return <h2>This is Freedom gundam</h2>;
-//     }
 
-// }
+    function Archangel() {
+        const gundams = [
+            {id: 1, model: "ZMGF-X10A Freedom Gundam"},
+            {id: 2, model: "ZMGF-X10A Justice Gundam"},
+            {id: 3, model: "Sword Strike Gundam"}
+        ];
 
-// class Archangel extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 <h1>Who lives in Archangel???</h1>
-//                 <Gundam />
-//             </div>
-//         )
-//     }
-// }
+        return (
+            <>
+                <h1>Which Gundam lives in Archangel???</h1>
+                <ul>
+                    {gundams.map((mobileSuite) => <Gundam key={mobileSuite.id} model={mobileSuite.model} />)}
+                </ul>
+            </>
+        );
+    }
+
+
 
 export default Archangel;
+
+// 12/16강의
