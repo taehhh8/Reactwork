@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import './Hello';
-
+// import './hello';
 import './Wow';
 
 // function App() {
@@ -34,6 +33,7 @@ import './Wow';
 //     );
   
 // }
+// export default App;
 
 function App() {
   return(
@@ -41,7 +41,6 @@ function App() {
     <Wow />
 </div>
     );
-  
 }
   
 export default App;

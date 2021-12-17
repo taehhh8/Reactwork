@@ -11,10 +11,9 @@ import reportWebVitals from './reportWebVitals';
 import Football from './Football';
 import Goal from './Goal';
 import Fate from './Fate';
-import HordForm from './HordForm'
-import 
+import HordForm from './HordForm';
 
-const characters = ['Siro', 'Saber', 'Archer', 'Tosaka Lyn', 'Verserker'];
+// const characters = ['Siro', 'Saber', 'Archer', 'Tosaka Lyn', 'Verserker'];
 
 // import CarFun from './CarFun'
 // import ContainerFun from './ContainerFun'
@@ -28,7 +27,7 @@ const characters = ['Siro', 'Saber', 'Archer', 'Tosaka Lyn', 'Verserker'];
 
 ReactDOM.render(
   <React.StrictMode>
-    <HordForm />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 )

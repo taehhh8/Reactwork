@@ -3,12 +3,12 @@ import React, {useState} from 'react';
 // class Wow extends React.Component{}
 
 function Wow() {
-    const [input, setInputs] = useState;
+    const [inputs, setIputs] = useState({});
 
     const handleChange = (event) => {
-        const name = evenet.target.name;
+        const name = event.target.name;
         const value = event.target.value;
-        setInPuts(values => ({...values, [name]: value}));
+        setIputs(values => ({...values, [name]: value}));
     }
 
     const handleSubmit = (event) => {
