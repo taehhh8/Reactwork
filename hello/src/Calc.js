@@ -1,69 +1,120 @@
 import React, {useState} from 'react';
 
-// class Wow extends React.Component{}
 
 function Calc() {
-    const [inputs, setInputs] = useState({});
+    const [inputs, setInputs] = useState({
+        username: '',
+        userid: ''
+    });
 
-    const handleChange = (event) => {
-        const name = event.target.name;
-        const value = event.target.value;
-        setInputs(values => ({...values, [name]: value}));
+    const {username, userid } = inputs;
+
+    const onDateChange = (e) => {
+        const { value, name } = e.target;
+        setInputs({
+            ...inputs,
+            [name]: value
+        });
     }
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        console.log(inputs);
+    const onDateReset = () => {
+        setInputs({
+            username: '',
+            userid: ''
+        });
     }
+    const [numbers, setNumbers] = useState ({
+        number1: '',
+        number2: '',
+    });
+    const [number, setNumber] = useState (0);
+
+    // const {number1, number2} = numbers;
+
+    const numberChange = (e) => {
+        const { value, name } = e.target;
+        setNumbers({
+            ...numbers,
+            [name]: Number(value)
+        });
+    }
+
+    const result = (e) => {
+        e.preventDefault();
+        console.log(numbers.number1)
+        setNumber(numbers.number1 + numbers.number2)
+        
+    }
+
+    const result1 = (e) => {
+        e.preventDefault();
+        console.log(numbers.number1)
+        setNumber(numbers.number1 - numbers.number2)
+        
+    }
+    
+    const result2 = (e) => {
+        e.preventDefault();
+        console.log(numbers.number1)
+        setNumber(numbers.number1 * numbers.number2)
+        
+    }
+
+    const result3 = (e) => {
+        e.preventDefault();
+        console.log(numbers.number1)
+        setNumber(numbers.number1 / numbers.number2)
+        
+    }     
 
     return (
         <div>
-            <h1>Calc Result</h1>    
-            <form onSubmit = {handleSubmit}>
+            <h1>Calc Result {number} </h1>    
+            <form>
                 <label>Enter Calc Number:
                     <input
-                       type="text"
-                       name="username"
+                       type="number"
+                       name="number1"
                        placeholder='0'
-                       value={inputs.username || ""}
-                       onChange={handleChange}
+                       value={numbers.number1}
+                       onChange={numberChange}
                     />   
                 </label>
                 <label>
                     <input
                         type="number"
-                        name="age"
+                        name="number2"
                         placeholder='0'
-                        value={inputs.age || ""}
-                        onChange={handleChange}
+                        value={numbers.number2}
+                        onChange={numberChange}
                     />
                 </label>
-                <button>Add</button>
-                <button>Sub</button>
-                <button>Mult</button>
-                <button>divi</button>
+                <button onClick={result}>Add</button>
+                <button onClick={result1}>Sub</button>
+                <button onClick={result2}>Mult</button>
+                <button onClick={result3}>divi</button>
             </form>
-            <h1>Text add Result</h1>
-            <form onSubmit = {handleSubmit}>
+            <h1>값 {username}{userid}</h1>
+            <form>
                 <label>Enter Calc Number:
                     <input
                        type="text"
                        name="username"
-                       placeholder='0'
-                       value={inputs.username || ""}
-                       onChange={handleChange}
+                       placeholder='string'
+                       value={username}
+                       onChange={onDateChange}
                     />   
                 </label>
                 <label>
                     <input
-                        type="number"
-                        name="age"
-                        placeholder='0'
-                        value={inputs.age || ""}
-                        onChange={handleChange}
+                        type="text"
+                        name="userid"
+                        placeholder='string'
+                        value={userid}
+                        onChange={onDateChange}
                     />
                 </label>
-                <button>AddString</button>
+                <button onClick={onDateReset}>AddString</button>
             </form>
         </div>    
     );

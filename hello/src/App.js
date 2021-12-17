@@ -3,7 +3,7 @@ import './App.css';
 // import './hello';
 // import Wow from './Wow';
 import Counter from './Counter';
-// import Calc from './Calc';
+import Calc from './Calc';
 
 // function App() {
 //   return (
@@ -48,23 +48,23 @@ import Counter from './Counter';
 // export default App;
 
 
-function App() {
-  return(
-      <div>
-        <Counter />
-      </div>
-    );
-}
-  
-export default App;
-
-
 // function App() {
 //   return(
 //       <div>
-//         <Calc />
+//         <Counter />
 //       </div>
 //     );
 // }
   
 // export default App;
+
+
+function App() {
+  return(
+      <div>
+        <Calc />
+      </div>
+    );
+}
+  
+export default App;

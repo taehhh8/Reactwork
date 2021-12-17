@@ -44,7 +44,6 @@ class Headercomp extends React.Component {
                 <h1>{this.state.headertitle}</h1>
                 <div id="div1"></div>
                 <div id="div2"></div>
-               
             </div>
         )
         // return (<h1>{this.state.headertitle}</h1>);
