@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 // import './hello';
-import './Wow';
+// import Wow from './Wow';
+import Counter from './Counter';
+// import Calc from './Calc';
 
 // function App() {
 //   return (
@@ -35,12 +37,34 @@ import './Wow';
 // }
 // export default App;
 
+// function App() {
+//   return(
+//       <div>
+//         <Wow />
+//       </div>
+//     );
+// }
+  
+// export default App;
+
+
 function App() {
   return(
-<div>
-    <Wow />
-</div>
+      <div>
+        <Counter />
+      </div>
     );
 }
   
 export default App;
+
+
+// function App() {
+//   return(
+//       <div>
+//         <Calc />
+//       </div>
+//     );
+// }
+  
+// export default App;

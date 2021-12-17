@@ -1,0 +1,19 @@
+.calcu_result { 
+    display: flex; 
+} 
+
+.calcu_result h1 {
+    height: 30px; 
+    } 
+    
+.calcu { 
+    width: 100%;
+    height: 30px;
+    display: flex; 
+} 
+
+.calcu h2 { 
+    margin: 0; 
+    height: 30px; 
+}
+
