@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import './Hello';
+
+import './Wow';
 
 // function App() {
 //   return (
@@ -23,10 +26,19 @@ import './App.css';
 // }
 
 
+// function App() {
+//   return(
+// <div className="App">
+//     <h1>Hello World</h1>
+// </div>
+//     );
+  
+// }
+
 function App() {
   return(
-<div className="App">
-    <h1>Hello World</h1>
+<div>
+    <Wow />
 </div>
     );
   

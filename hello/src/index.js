@@ -12,6 +12,7 @@ import Football from './Football';
 import Goal from './Goal';
 import Fate from './Fate';
 import HordForm from './HordForm'
+import 
 
 const characters = ['Siro', 'Saber', 'Archer', 'Tosaka Lyn', 'Verserker'];
 
@@ -31,7 +32,7 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 )
-// XML 구문dddddddd
+// XML 
 
 
 // ReactDOM.render(
