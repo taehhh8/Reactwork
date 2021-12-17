@@ -29,8 +29,8 @@ ReactDOM.render(
     <Archangel />
   </React.StrictMode>,
   document.getElementById('root')
-
 )
+// XML 구문
 
 
 // ReactDOM.render(
