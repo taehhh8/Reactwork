@@ -2,16 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Car from './Car';
-import Gundam from './Gundam';
-import Archangel from './Archangel';
-import Headercomp from './Headercomp';
-import Container from './Container';
-import reportWebVitals from './reportWebVitals';
-import Football from './Football';
-import Goal from './Goal';
-import Fate from './Fate';
-import HordForm from './HordForm';
+// import Car from './Car';
+// import Gundam from './Gundam';
+// import Archangel from './Archangel';
+// import Headercomp from './Headercomp';
+// import Container from './Container';
+// import reportWebVitals from './reportWebVitals';
+// import Football from './Football';
+// import Goal from './Goal';
+// import Fate from './Fate';
+// import HordForm from './HordForm';
 
 // const characters = ['Siro', 'Saber', 'Archer', 'Tosaka Lyn', 'Verserker'];
 

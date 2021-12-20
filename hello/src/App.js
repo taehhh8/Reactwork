@@ -2,8 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 // import './hello';
 // import Wow from './Wow';
-import Counter from './Counter';
-import Calc from './Calc';
+// import Counter from './Counter';
+// import Calc from './Calc';
+// import Jsxtest from './Jsxtest';
+// import Jsxcss from './Jsxcss';
+// import Block4 from './pages/Block4';
+import Block4 from './Block4';
 
 // function App() {
 //   return (
@@ -59,12 +63,43 @@ import Calc from './Calc';
 // export default App;
 
 
+// function App() {
+//   return(
+//       <div>
+//         <Calc />
+//       </div>
+//     );
+// }
+
+// function App() {
+//   return(
+//       <div>
+//         <Jsxtest />
+//         <Wow />
+//       </div>
+//     );
+// }
+
+// function App() {
+//   return(
+//       <div>
+//         <Jsxcss />
+//         <Wow />
+//       </div>
+//     );
+// }
+
 function App() {
   return(
       <div>
-        <Calc />
+        <div>
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
+        <Block4 />
       </div>
     );
 }
+
+
   
 export default App;

@@ -5,3 +5,4 @@ function Gundam(props) {
 
 export default Gundam;
 
+//12/16강의
