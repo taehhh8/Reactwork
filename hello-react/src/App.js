@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import './InputExam';
-import InputExam from './InputExam';
+// import InputExam from './InputExam';
+import Calculator from './Calculator';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
-      <InputExam />
+      {/* <Calculator /> */}
       {/*<Block4 />*/}
       {/* <h1> hello World </h1> */}
     </div>
