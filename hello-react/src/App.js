@@ -7,6 +7,7 @@ import './InputExam';
 // import UserManage from './UserManage';
 // import Box from './Box';
 import Reactcss from './Reactcss';
+import CircleDiv from './CircleDiv';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       {/* <h1> hello World </h1> */}
     </div>
     <div>
-      <Reactcss />
+      <CircleDiv color = "blue" />
     </div>
     </>
   );
