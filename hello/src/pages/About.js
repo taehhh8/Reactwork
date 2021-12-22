@@ -10,3 +10,5 @@ const About = () => {
 }
 
 export default About;
+
+//12/20강의
