@@ -5,6 +5,8 @@ import TodoTemplate from './components/TodoTemplate';
 import TodoHead from './components/TodoHead';
 import TodoList from './components/TodoList';
 import TodoCreate from './components/TodoCreate';
+// import ReactExam from  './ReactExam'
+import { TodoProvider } from './TodoContext';
 
 
 
@@ -17,14 +19,21 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return (
     <>
+    <TodoProvider>
       <GlobalStyle />
       <TodoTemplate>
         <TodoHead />
         <TodoList />
         <TodoCreate />
       </TodoTemplate>
+    </TodoProvider>
     </>
   );
+//   return (
+//     <div>
+//       <ReactExam />
+//     </div>
+//   );
 }
 
 // function App() {
